@@ -1,0 +1,10 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /benben-log-volume/benben-*.log
+output.logstash:
+  enabled: true
+
+  # The Logstash hosts
+  hosts: ["logstash"]
